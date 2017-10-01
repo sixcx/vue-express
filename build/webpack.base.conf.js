@@ -46,6 +46,11 @@ module.exports = {
         }
       },
       {
+        test: /\.(less|css)$/,
+        loader: 'style-loader!css-loader!less-loader',
+        exclude: /node_modules/
+      },
+      {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         loader: 'url-loader',
         options: {
