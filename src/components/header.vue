@@ -16,7 +16,7 @@
 <script>
     import * as avator from "@/assets/logo.png"
     export default {
-		name: 'header'
+		name: 'headTop'
     }
 </script>
 

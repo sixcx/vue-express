@@ -1,13 +1,20 @@
 <template>
     <div>
-        <header></header>
+        <head-top></head-top>
         <sidebar></sidebar>
     </div>
 </template>
 
 <script>
-    import header from './header'
-    import sidebar from './sidebar'
+    import headTop from './header.vue'
+    import sidebar from './sidebar.vue'
+
+    export default {
+        components: {
+            headTop,
+            sidebar
+        }
+    }
 </script>
         
 <style lang="less">
