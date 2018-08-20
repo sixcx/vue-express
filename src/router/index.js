@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import user from '@/components/User'
-//import sidebar from '@/components/sidebar'
-import home from '@/components/home'
 
 Vue.use(Router)
+
+const home = r => require.ensure([], () => r(require('@/page/home/home')), 'home');
+const user = r => require.ensure([], () => r(require('@/page/user/user')), 'user');
 
 export default new Router({
   routes: [
