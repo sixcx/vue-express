@@ -1,6 +1,9 @@
 <template>
     <el-container>
-        <el-aside width="200px">
+        <el-aside v-if="sidebar.opened" width='180px'>
+            <sidebar></sidebar>
+        </el-aside>
+        <el-aside v-else width='64px'>
             <sidebar></sidebar>
         </el-aside>
         <el-container>
@@ -14,12 +17,18 @@
 <script>
     import headTop from './header.vue'
     import sidebar from './sidebar.vue'
+    import { mapGetters } from 'vuex'
 
     export default {
         components: {
             headTop,
             sidebar
-        }
+        },
+        computed: {
+			...mapGetters([
+				'sidebar'
+			])
+		}
     }
 </script>
         
@@ -30,7 +39,7 @@
     .el-header, .el-footer {
         background-color: #fff;
         color: #333;
-        text-align: center;
+        // text-align: center;
         line-height: 60px;
     }
 </style>

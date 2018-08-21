@@ -15,7 +15,10 @@
 				</template>
 			</el-menu-item>
 			<el-submenu index="2">
-				<template slot="title"><i class="el-icon-document"></i>数据管理</template>
+				<template slot="title">
+					<i class="el-icon-document"></i>
+					<span slot="title">数据管理</span>
+				</template>
 				<el-menu-item index="user">用户管理</el-menu-item>
 				<el-menu-item index="shop">商家管理</el-menu-item>
 				<el-menu-item index="food">货物管理</el-menu-item>
@@ -44,4 +47,7 @@
 
 <style lang="less" scoped>
 	// @import './style/mixin';
+	.sidebar {
+		width: 100%;
+	}
 </style>

@@ -19,6 +19,7 @@
     "element-ui": "2.4.6",
     "express": "^4.15.4",
     "mongoose": "^4.11.10",
+    "screenfull": "^3.3.2",
     "vue": "^2.3.0",
     "vue-router": "^2.7.0",
     "vuex": "^2.3.1"
