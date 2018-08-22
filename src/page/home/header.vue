@@ -25,8 +25,12 @@
 					吴彦祖<i class="el-icon-arrow-down el-icon--right"></i>
 				</span>
 				<el-dropdown-menu slot="dropdown">
-					<el-dropdown-item>黄金糕</el-dropdown-item>
-					<el-dropdown-item>狮子头</el-dropdown-item>
+					<a target="_blank" href="https://github.com/sixcx/vue-express">
+						<el-dropdown-item>
+							github
+						</el-dropdown-item>
+					</a>
+					<el-dropdown-item>退出</el-dropdown-item>
 				</el-dropdown-menu>
 			</el-dropdown>
 		</div>
