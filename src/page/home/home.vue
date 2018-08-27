@@ -10,6 +10,9 @@
             <el-header>
                 <head-top></head-top>
             </el-header>
+            <el-main>
+                <main-body></main-body>
+            </el-main>
         </el-container>
     </el-container>
 </template>
@@ -17,12 +20,14 @@
 <script>
     import headTop from './header.vue'
     import sidebar from './sidebar.vue'
+    import mainBody from './main.vue'
     import { mapGetters } from 'vuex'
 
     export default {
         components: {
             headTop,
-            sidebar
+            sidebar,
+            mainBody
         },
         computed: {
 			...mapGetters([
