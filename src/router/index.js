@@ -5,6 +5,7 @@ Vue.use(Router)
 
 const home = r => require.ensure([], () => r(require('@/page/home/home')), 'home');
 const user = r => require.ensure([], () => r(require('@/page/user/user')), 'user');
+const goods = r => require.ensure([], () => r(require('@/page/goods/index')), 'goods');
 
 export default new Router({
   routes: [
@@ -25,8 +26,8 @@ export default new Router({
         component: shop,
         meta: ['数据管理', '商家管理'],
       },{
-        path: '/food',
-        component: food,
+        path: '/goods',
+        component: goods,
         meta: ['数据管理', '货物管理'],
       },{
         path: '/order',
